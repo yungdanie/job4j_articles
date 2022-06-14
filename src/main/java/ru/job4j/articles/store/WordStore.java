@@ -34,7 +34,7 @@ public class WordStore implements Store<Word>, AutoCloseable {
         try {
             connection = DriverManager.getConnection(
                     properties.getProperty("url"),
-                    properties.getProperty("username"),
+                    properties.getProperty("postgres"),
                     properties.getProperty("password")
             );
         } catch (SQLException e) {
